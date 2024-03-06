@@ -1,9 +1,14 @@
-import React from 'react'
+import ContentMenu from "@/components/organism/ContentMenu";
+import NavbarMenu from "@/components/organism/NavbarMenu";
+import React from "react";
 
 const Menu = () => {
   return (
-    <div>Menu</div>
-  )
-}
+    <div>
+      <NavbarMenu />
+      <ContentMenu />
+    </div>
+  );
+};
 
-export default Menu
+export default Menu;
