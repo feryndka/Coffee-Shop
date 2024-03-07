@@ -12,17 +12,18 @@ const ListMenu = () => {
     },
     {
       name: "Featured",
-      link: "#",
+      link: "/menu/featured",
     },
     {
       name: "Previous",
-      link: "#",
+      link: "/menu/previous",
     },
     {
       name: "Favorites",
-      link: "#",
+      link: "/menu/favorites",
     },
   ];
+
   return (
     <div className="flex h-full gap-5 items-center text-sm w-[80vw] mx-auto">
       {list.map((item, index) => (
@@ -34,7 +35,11 @@ const ListMenu = () => {
           {item.name}
           <div
             className={`${
-              pathname.startsWith(item.link)
+              pathname === item.link
+                ? "h-px bg-amber-900 absolute right-0 left-0 bottom-2.5"
+                : null
+            } ${
+              pathname === "/"
                 ? "h-px bg-amber-900 absolute right-0 left-0 bottom-2.5"
                 : null
             }`}
