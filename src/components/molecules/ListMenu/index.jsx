@@ -35,11 +35,7 @@ const ListMenu = () => {
           {item.name}
           <div
             className={`${
-              pathname === item.link
-                ? "h-px bg-amber-900 absolute right-0 left-0 bottom-2.5"
-                : null
-            } ${
-              pathname === "/"
+              pathname === item.link || pathname === "/"
                 ? "h-px bg-amber-900 absolute right-0 left-0 bottom-2.5"
                 : null
             }`}
