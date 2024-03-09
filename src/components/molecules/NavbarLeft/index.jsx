@@ -12,8 +12,8 @@ const NavbarLeft = () => {
       link: "/menu",
     },
     {
-      name: "REWARDS",
-      link: "/rewards",
+      name: "BEST SELLER",
+      link: "/best",
     },
     {
       name: "GIFT CARDS",

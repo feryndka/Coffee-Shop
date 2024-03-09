@@ -7,9 +7,9 @@ const ContentFeatured = () => {
   return (
     <div className="w-[90vw] mx-auto text-center">
       <h1 className="font-bold text-5xl mb-20 mt-5">Spring it on</h1>
-      <div className="grid grid-cols-2 gap-8 mb-24">
+      <div className="grid md:grid-cols-2 gap-8 mb-24 max-w-full">
         {DATA_FEATURED.map((item, index) => (
-          <div className="col-span-1" key={index}>
+          <div key={index}>
             <div>
               <Image
                 alt="drink"
